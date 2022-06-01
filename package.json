@@ -1,0 +1,33 @@
+{
+  "name": "equal-experts",
+  "author": "",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "glist": "./index.ts"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.6.0",
+    "@types/figlet": "^1.5.4",
+    "chalk": "^5.0.1",
+    "figlet": "^1.5.2",
+    "ts-node": "^10.8.0",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@types/yargs": "^17.0.10",
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "exec": "ts-node-esm index.ts -u takakabe -f",
+    "cmd": "npm run build && node index.js -u takakabe -f",
+    "help": "ts-node-esm index.ts --help"
+  }
+}
