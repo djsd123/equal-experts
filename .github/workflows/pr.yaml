@@ -1,0 +1,21 @@
+name: pr
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - synchronize
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: reviewdog/action-eslint@v1
+        with:
+          eslint_flags: '**/*.ts'
+          fail_on_error: true
