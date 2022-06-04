@@ -113,8 +113,7 @@ const initialRun = (file: fs.PathLike, user: string, time: string) => {
     LastRunTimeStamp: time,
   };
   entries.push(rawEntry);
-  const content = entries;
-  saveChanges(file, content);
+  saveChanges(file, entries);
   getGists(user).then();
 };
 
