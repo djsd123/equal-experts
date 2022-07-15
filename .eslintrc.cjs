@@ -12,6 +12,7 @@ module.exports = {
     'no-console': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/consistent-type-definitions': ['error', 'type']
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/no-explicit-any': 0
   }
 };
