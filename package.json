@@ -35,8 +35,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "exec": "ts-node-esm index.ts -u takakabe -f",
-    "cmd": "npm run build && node index.js -u takakabe -f",
+    "exec": "ts-node-esm index.ts -u djsd123 -f",
+    "cmd": "npm run build && node index.js -u djsd123 -f",
     "help": "ts-node-esm index.ts --help",
     "lint": "eslint '*.ts'",
     "lint:fix": "eslint '*.ts' --fix",
