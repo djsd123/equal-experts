@@ -53,9 +53,9 @@ __List all gists for a previously queried user__
 
 ## Options
 
-| Flag             | Description                                                         | Required |
-|------------------|---------------------------------------------------------------------|----------|
-| `-u, --user`     | `The GitHub handle of user who's gists you'd like to list`          | `false`  |
-| `-f, --freshrun` | `List all of the user's gists even if listed during a previous run` | `false`  |
-| `--version`      | `Show version number`                                               | `false`  |
-| `--help`         | `Show help`                                                         | `false`  |
+| Flag             | Description                                                         | Required                      |
+|------------------|---------------------------------------------------------------------|-------------------------------|
+| `-u, --user`     | `The GitHub handle of user who's gists you'd like to list`          | `false` **Default**: `djsd123` |
+| `-f, --freshrun` | `List all of the user's gists even if listed during a previous run` | `false`                       |
+| `--version`      | `Show version number`                                               | `false`                       |
+| `--help`         | `Show help`                                                         | `false`                       |
